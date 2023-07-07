@@ -1,8 +1,7 @@
 package com.example.demo.accessory;
 
-import com.example.demo.accessory.Accessory;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class AccessoryConfig {
 
     @Bean
-    public CommandLineRunner accessorycommandLineRunner(
+     CommandLineRunner accessorycommandLineRunner(
             AccessoryRepository repository){
         return args -> {
             Accessory helmet = new Accessory(

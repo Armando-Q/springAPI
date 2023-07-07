@@ -19,14 +19,16 @@ public class Accessory {
             generator = "accessory_sequence"
     )
 
-    @JsonIgnore
-    @ManyToOne
-    @JoinColumn(name= "motorcycleId", insertable = false, updatable = false)
-    private Motorcycle motorcycle;
+
 
     private Long id;
     private String type;
     private Double price;
+
+    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name= "motorcycle_id", insertable = false, updatable = false)
+    private Motorcycle motorcycle;
 
     public Accessory(){
 

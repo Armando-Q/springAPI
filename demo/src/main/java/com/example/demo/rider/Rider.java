@@ -1,7 +1,7 @@
 package com.example.demo.rider;
 
 
-//import com.example.demo.motorcycles.Motorcycle;
+import com.example.demo.motorcycles.Motorcycle;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
@@ -25,8 +25,7 @@ public class Rider {
     private Long id;
 
     @JsonIgnore
-    @ManyToMany(mappedBy = "accessories")
-
+    @ManyToMany(mappedBy = "riders")
     private Set<Motorcycle> motorcycles;
 
 
@@ -90,14 +89,14 @@ public class Rider {
     }
 
 
-    public void Set<Motorcycle> getMotorcycles(){
-        return motorcycles;
-    }
+//    public void Set<Motorcycle> getMotorcycles(){
+//        return motorcycles;
+//    }
 
 
-    public void assignRiderToMotorcycle(Motorcycle motorcycle){
-        motorcycle.add(motorcycle);
-    }
+//    public void assignRiderToMotorcycle(Motorcycle motorcycle){
+//        motorcycle.add(motorcycle);
+//    }
 
     @Override
     public String toString(){

@@ -29,7 +29,7 @@ public class Motorcycle {
    // @JsonIgnore
     @ManyToMany()
     @JoinTable(
-            name="mutual riders",
+            name="mutual_riders",
             joinColumns = @JoinColumn(name = "rider_id"),
             inverseJoinColumns = @JoinColumn(name = "motorcycle_id")
     )
